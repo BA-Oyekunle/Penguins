@@ -12,7 +12,7 @@ import numpy as np
 # In[2]:
 
 
-model = joblib.load("model/penguin_model.pkl")
+model = joblib.load("model/kmeans_model.pkl")
 
 
 # In[ ]:
@@ -60,4 +60,5 @@ script, _= exporter.from_notebook_node(notebook)
 
 with open ("streamlit_app.py", "w") as f:
     f.write(script)
+
 
